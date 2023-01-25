@@ -1,0 +1,10 @@
+service: "service:svc"
+labels:
+   owner: bentoml-team
+   stage: dev
+include:
+ - "service.py"
+python:
+   packages:
+   - xgboost
+   - numpy
